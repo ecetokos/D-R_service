@@ -1,0 +1,16 @@
+C:\Users\terzi\OneDrive\Masaüstü\jwt-api-master\src\JWTAPI\JWTAPI\obj\Debug\netcoreapp2.1\JWTAPI.csprojAssemblyReference.cache
+C:\Users\terzi\OneDrive\Masaüstü\jwt-api-master\src\JWTAPI\JWTAPI\obj\Debug\netcoreapp2.1\JWTAPI.RazorAssemblyInfo.cache
+C:\Users\terzi\OneDrive\Masaüstü\jwt-api-master\src\JWTAPI\JWTAPI\obj\Debug\netcoreapp2.1\JWTAPI.RazorAssemblyInfo.cs
+C:\Users\terzi\OneDrive\Masaüstü\jwt-api-master\src\JWTAPI\JWTAPI\obj\Debug\netcoreapp2.1\JWTAPI.AssemblyInfoInputs.cache
+C:\Users\terzi\OneDrive\Masaüstü\jwt-api-master\src\JWTAPI\JWTAPI\obj\Debug\netcoreapp2.1\JWTAPI.AssemblyInfo.cs
+C:\Users\terzi\OneDrive\Masaüstü\jwt-api-master\src\JWTAPI\JWTAPI\bin\Debug\netcoreapp2.1\appsettings.Development.json
+C:\Users\terzi\OneDrive\Masaüstü\jwt-api-master\src\JWTAPI\JWTAPI\bin\Debug\netcoreapp2.1\appsettings.json
+C:\Users\terzi\OneDrive\Masaüstü\jwt-api-master\src\JWTAPI\JWTAPI\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+C:\Users\terzi\OneDrive\Masaüstü\jwt-api-master\src\JWTAPI\JWTAPI\bin\Debug\netcoreapp2.1\JWTAPI.deps.json
+C:\Users\terzi\OneDrive\Masaüstü\jwt-api-master\src\JWTAPI\JWTAPI\bin\Debug\netcoreapp2.1\JWTAPI.runtimeconfig.json
+C:\Users\terzi\OneDrive\Masaüstü\jwt-api-master\src\JWTAPI\JWTAPI\bin\Debug\netcoreapp2.1\JWTAPI.runtimeconfig.dev.json
+C:\Users\terzi\OneDrive\Masaüstü\jwt-api-master\src\JWTAPI\JWTAPI\bin\Debug\netcoreapp2.1\JWTAPI.dll
+C:\Users\terzi\OneDrive\Masaüstü\jwt-api-master\src\JWTAPI\JWTAPI\bin\Debug\netcoreapp2.1\JWTAPI.pdb
+C:\Users\terzi\OneDrive\Masaüstü\jwt-api-master\src\JWTAPI\JWTAPI\obj\Debug\netcoreapp2.1\JWTAPI.RazorTargetAssemblyInfo.cache
+C:\Users\terzi\OneDrive\Masaüstü\jwt-api-master\src\JWTAPI\JWTAPI\obj\Debug\netcoreapp2.1\JWTAPI.dll
+C:\Users\terzi\OneDrive\Masaüstü\jwt-api-master\src\JWTAPI\JWTAPI\obj\Debug\netcoreapp2.1\JWTAPI.pdb
