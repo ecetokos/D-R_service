@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using JWTAPI.Data;
+using JWTAPI.Services;
 
 namespace JWTAPI.Controllers
 {
@@ -13,21 +14,23 @@ namespace JWTAPI.Controllers
     [ApiController]
     public class UrunlerController : ControllerBase
     {
+        private readonly IService _categoryService;
         private DataContext _context;
-        public UrunlerController(DataContext context)
+        public UrunlerController(DataContext context,IService categoryService)
         {
             _context = context;
+            _categoryService = categoryService;
         }
         [HttpGet("kitaplar")]
         public async Task<ActionResult> GetUrunler_kitap()
         {
-            var values = await _context.Ürün_Kitaplar.ToListAsync();
+            var values = await _categoryService.ListAsync4();
             return Ok(values);
         }
         [HttpGet("digerleri")]
         public async Task<ActionResult> GetUrunler_diger()
         {
-            var valuess = await _context.Ürün_Diğerleri.ToListAsync();
+            var valuess = await _categoryService.ListAsync5();
             return Ok(valuess);
         }
     }

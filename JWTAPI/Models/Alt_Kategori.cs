@@ -5,10 +5,10 @@ using System.Threading.Tasks;
 
 namespace JWTAPI.Models
 {
-	public class Kategori
+	public class Alt_Kategori
 	{
 		public int Id { get; set; }
 		public string Name { get; set; }
-		//public IList<Ürün_Diğer> Ürün_Diğerleri { get; set; } = new List<Ürün_Diğer>();
+		public int Category_Id { get; set; }
 	}
 }

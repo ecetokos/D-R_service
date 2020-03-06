@@ -6,6 +6,11 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using JWTAPI.Data;
 using Microsoft.EntityFrameworkCore;
+using JWTAPI.Services;
+using JWTAPI.Repositories;
+using AutoMapper;
+using JWTAPI.Models;
+using JWTAPI.Resources;
 
 namespace JWTAPI.Controllers
 {
@@ -13,28 +18,39 @@ namespace JWTAPI.Controllers
     [ApiController]
     public class KategorilerController : ControllerBase
     {
-        private DataContext _context;
-        public KategorilerController(DataContext context)
+        private readonly IService _categoryService;
+        private readonly IMapper _mapper;
+       
+        public KategorilerController(IService categoryService,IMapper mapper)
         {
-            _context = context;
+            _categoryService = categoryService;
+            _mapper = mapper;        
         }
         [HttpGet]
-        public async Task<ActionResult> GetCategories()
+        public async Task<IEnumerable<CategoryResource>> GetCategories()
         {
-            var values = await _context.Kategoriler.ToListAsync();
-            return Ok(values);
+            var values = await _categoryService.ListAsync();
+            var resources = _mapper.Map<IEnumerable<Kategori>, IEnumerable<CategoryResource>>(values);
+            return resources;
         }
-        [HttpGet("{id}")]
+        /*[HttpGet("{id}")]
         public async Task<ActionResult> GetCategory(int id)
         {
-            var value = await _context.Kategoriler.FirstOrDefaultAsync(x => x.Id == id);
+            var value = await _context.FirstOrDefaultAsync(x => x.Id == id);
             return Ok(value);
-        }
+        }*/
         [HttpGet("kitap")]
         public async Task<ActionResult> GetSubCategory()
         {
-            var subcategory = await _context.Kitaplar.ToListAsync();
+            var subcategory = await _categoryService.ListAsync2();
             return Ok(subcategory);
         }
+        [HttpGet("kitap/edebiyat")]
+        public async Task<ActionResult> GetSSubCategory()
+        { 
+            var ssubcategory = await _categoryService.ListAsync3();
+            return Ok(ssubcategory);
+        }
+
     }
 }

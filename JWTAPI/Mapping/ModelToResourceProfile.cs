@@ -3,6 +3,8 @@ using AutoMapper;
 using JWTAPI.Controllers.Resources;
 using JWTAPI.Core.Models;
 using JWTAPI.Core.Security.Tokens;
+using JWTAPI.Models;
+using JWTAPI.Resources;
 
 namespace JWTAPI.Mapping
 {
@@ -10,6 +12,7 @@ namespace JWTAPI.Mapping
     {
         public ModelToResourceProfile()
         {
+            CreateMap<Kategori, CategoryResource>();
             CreateMap<User, UserResource>()
                 .ForMember(u => u.Roles, opt => opt.MapFrom(u => u.UserRoles.Select(ur => ur.Role.Name)));
 

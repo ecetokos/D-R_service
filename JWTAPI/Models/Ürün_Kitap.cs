@@ -7,6 +7,7 @@ namespace JWTAPI.Models
 {
 	public class Ürün_Kitap
 	{
+		public int SubC_Id { get; set; } 
 		public int Id { get; set; }
 		public byte[] Photo { get; set; }
 		public double Point { get; set; }	

@@ -13,9 +13,10 @@ namespace JWTAPI.Data
 
 		}
 		public DbSet<Kategori> Kategoriler { get; set; }
-		public DbSet<Kitap_Kategori> Kitaplar { get; set; }
+		public DbSet<Alt_Kategori> Kitaplar { get; set; }
 		public DbSet<Ürün_Kitap> Ürün_Kitaplar { get; set; }
 		public DbSet<Ürün_Diğer> Ürün_Diğerleri { get; set; }
 		public DbSet<Sepet> Sepettekiler { get; set; }
+		public DbSet<AAlt_Kategori> AAlt_Kategoriler { get; set; }
 	}
 }

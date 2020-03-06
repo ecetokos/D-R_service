@@ -16,6 +16,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 using JWTAPI.Data;
+using JWTAPI.Repositories;
+
 
 namespace JWTAPI
 {
@@ -35,7 +37,9 @@ namespace JWTAPI
             {
                 options.UseInMemoryDatabase("jwtapi");
             });
-
+            services.AddScoped<IRepository, Repository>();
+            services.AddScoped<IService, Service>();
+           
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
 

@@ -1,6 +1,8 @@
 using AutoMapper;
 using JWTAPI.Controllers.Resources;
 using JWTAPI.Core.Models;
+using JWTAPI.Resources;
+using JWTAPI.Models;
 
 namespace JWTAPI.Mapping
 {
@@ -8,6 +10,7 @@ namespace JWTAPI.Mapping
     {
         public ResourceToModelProfile()
         {
+            CreateMap<Kategori, CategoryResource>();
             CreateMap<UserCredentialsResource, User>();
         }
     }
